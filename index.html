@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲料線上點單 - 通用模板</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:微軟正黑體,sans-serif;}
+        body{background:#f8f9fa;padding:10px;}
+        .container{max-width:800px;margin:0 auto;background:#fff;border-radius:12px;padding:15px;box-shadow:0 0 10px #eee;}
+        .shop-title{text-align:center;font-size:26px;color:#e63946;margin-bottom:20px;font-weight:bold;}
+        .category{margin:15px 0;}
+        .cate-title{font-size:18px;background:#e63946;color:#fff;padding:8px;border-radius:8px;margin-bottom:10px;}
+        .drink-item{display:flex;align-items:center;justify-content:space-between;padding:12px;border-bottom:1px solid #eee;}
+        .drink-info{flex:1;}
+        .drink-name{font-size:16px;font-weight:bold;}
+        .drink-price{color:#e63946;margin-top:5px;}
+        .option{margin:8px 0;font-size:14px;}
+        select{padding:4px;border-radius:4px;border:1px solid #ccc;}
+        .add-btn{background:#e63946;color:white;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;}
+        .cart{margin-top:30px;border-top:2px solid #eee;padding-top:20px;}
+        .cart-title{font-size:20px;margin-bottom:10px;}
+        .cart-list{margin-bottom:15px;}
+        .total{font-size:18px;font-weight:bold;color:#e63946;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 這裡改店名即可 -->
+        <h1 class="shop-title">XX飲料專賣店</h1>
+
+        <!-- 飲品分類：可自由增減分類 -->
+        <div class="category">
+            <h2 class="cate-title">經典茶類</h2>
+            <div class="drink-item">
+                <div class="drink-info">
+                    <div class="drink-name">珍珠紅茶</div>
+                    <div class="drink-price">售價：35元</div>
+                    <div class="option">
+                        甜度：
+                        <select>
+                            <option>全糖</option>
+                            <option>半糖</option>
+                            <option>微糖</option>
+                            <option>無糖</option>
+                        </select>
+                        &nbsp;&nbsp;冰量：
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="add-btn">加入購物車</button>
+            </div>
+
+            <div class="drink-item">
+                <div class="drink-info">
+                    <div class="drink-name">翡翠檸檬茶</div>
+                    <div class="drink-price">售價：40元</div>
+                    <div class="option">
+                        甜度：
+                        <select>
+                            <option>全糖</option>
+                            <option>半糖</option>
+                            <option>微糖</option>
+                            <option>無糖</option>
+                        </select>
+                        &nbsp;&nbsp;冰量：
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="add-btn">加入購物車</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="cate-title">鮮奶類</h2>
+            <div class="drink-item">
+                <div class="drink-info">
+                    <div class="drink-name">珍珠鮮奶茶</div>
+                    <div class="drink-price">售價：50元</div>
+                    <div class="option">
+                        甜度、冰量同上
+                    </div>
+                </div>
+                <button class="add-btn">加入購物車</button>
+            </div>
+        </div>
+
+        <!-- 購物車區域 -->
+        <div class="cart">
+            <h2 class="cart-title">購物車</h2>
+            <div class="cart-list">尚無商品</div>
+            <div class="total">總金額：0 元</div>
+        </div>
+    </div>
+</body>
+</html>
